@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="center-div">
+        <h2>ToDo's</h2>
+    </div>
+    <div class="row">
+        <h4 class="h4">ToDo's : {{ total }}</h4>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div>
+            <button class="btn btn-dark btn-hover mainButton" (click)="allTodoList()">ALL</button>&nbsp;
+            <button class="btn btn-dark btn-hover mainButton" (click)="doneTodoList()">Done</button>&nbsp;
+            <button class="btn btn-dark btn-hover mainButton" (click)="notDoneTodoList()">Not Done</button><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <tr>
+                <th>S.No.</th>
+                <th>ToDo</th>
+                <th>Status</th>
+            </tr>
+            <tr *ngFor="let todo of todo;index as index">
+                <td>{{ index + 1 }}.</td>
+                <td>{{ todo.title }}</td>
+                <td><button *ngIf="todo.completed" class="btn btn-success myButton">Done</button>
+                    <button *ngIf="!todo.completed" class="btn btn-danger myButton">Not Done</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

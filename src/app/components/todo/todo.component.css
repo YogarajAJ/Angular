@@ -1,0 +1,29 @@
+.myButton{
+    float: right;
+    width: 110px;
+}
+
+.mainButton:hover{background-color:rgb(139, 139, 138);}
+
+.mainButton:focus{background-color:rgb(139, 139, 138);}
+
+table{
+    width: 800px;
+    border: 3px solid whitesmoke;
+    border-top: 1px ;
+}
+td{
+    border-right: 1px solid whitesmoke;
+}
+.right-div{
+    float: right;
+    text-align: right
+}
+.center-div{
+text-align: center;
+float: center;
+}
+th{
+    float: center;
+    text-align: center;
+}
