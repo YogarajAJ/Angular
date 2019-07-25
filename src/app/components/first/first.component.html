@@ -1,0 +1,12 @@
+<div class="container">
+
+    <div>
+        <input class="form-control" [(ngModel)] = "bookName" name="bookname">&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" (click)="getReview()">Search</button>
+    </div>
+
+    <table class="table">
+        <tr *ngFor= "let i of bookReviews">
+            <td>{{i.name}}</td><td>{{i.review}}</td><td>{{i.rating}}</td>
+        </tr>
+    </table>
+</div>

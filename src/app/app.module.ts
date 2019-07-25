@@ -1,24 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './components/todo/todo.component';
-import { HttpClientModule } from '@angular/common/http'
+import { FirstComponent } from './components/first/first.component';
+import { SecondComponent } from './components/second/second.component';
+import { BookService } from './services/book.service';
 
-import { TodoService } from './services/todo.service';
+import { FormsModule } from '@angular/forms'
+import { Http, HttpModule } from '@angular/http'
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [TodoService],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
