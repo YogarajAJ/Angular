@@ -43,4 +43,17 @@ export class TodoService {
     return todo;
   }
 
+  updateTodo(todo){
+
+    return this.httpClient.put(`${URL}/todos`, todo, headerOptions);
+  }
+
+  
+
+  addData(obj){
+    this.httpClient.post("http://localhost:3000/data", obj, headerOptions)
+  }
+
+
+
 }

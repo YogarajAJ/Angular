@@ -1,17 +1,30 @@
-.myButton{
-    float: right;
-    width: 110px;
+.my-center{
+    float: center;
 }
 
-.mainButton:hover{background-color:rgb(139, 139, 138);}
+.card-title{
+    padding-top: 26px;
+}
+.myButton{
+    float: right;
+   /* width: 110px; */
+} 
 
-.mainButton:focus{background-color:rgb(139, 139, 138);}
+.mainButton:hover  {
+    color: whitesmoke;
+    background-color:rgb(44, 44, 34);
+}
 
-table{
+.mainButton:focus{
+    background-color:rgb(44, 44, 34);
+    color: whitesmoke
+}
+
+/* table{
     width: 800px;
     border: 3px solid whitesmoke;
     border-top: 1px ;
-}
+} */
 td{
     border-right: 1px solid whitesmoke;
 }
@@ -26,4 +39,8 @@ float: center;
 th{
     float: center;
     text-align: center;
+}
+.card{
+    
+    float: center;
 }

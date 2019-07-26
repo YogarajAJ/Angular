@@ -8,6 +8,7 @@ import Todo from '../../models/todo.model';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
+
   total: number;
   allTodo: Todo[];
   todo: Todo[];
@@ -19,7 +20,7 @@ export class TodoComponent implements OnInit {
 
     this.service.getAllTodo().subscribe(
       response => {
-        this.allTodo = JSON.parse(JSON.stringify(response));
+        this.allTodo = JSON.parse (JSON.stringify(response));
         this.todo = this.allTodo;
         this.total = this.todo.length
       }
@@ -39,6 +40,18 @@ export class TodoComponent implements OnInit {
   notDoneTodoList() {
     this.todo = this.service.getNotDoneTodo(this.allTodo)
     this.total = this.todo.length
+  }
+
+  edit(todo){
+    todo.completed =  !todo.completed
+    
+    this.service.updateTodo(todo).subscribe(
+      data => console.log(data)    
+    )
+  }
+
+  addData(){
+    this.service.addData({})
   }
 
 }
