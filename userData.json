@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Cheenu",
+      "password": "123",
+      "name":"Cheenu",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    },
+    {
+      "id": 2,
+      "userName": "Amresh",
+      "password": "123",
+      "name":"Amresh",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    },
+    {
+      "id": 3,
+      "userName": "Melvin",
+      "password": "123",
+      "name":"Melvin",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    },
+    {
+      "id": 4,
+      "userName": "Yogaraj",
+      "password": "123",
+      "name":"Yogaraj",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    },
+    {
+      "id": 5,
+      "userName": "Manan",
+      "password": "123",
+      "name":"Manan",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    },
+    {
+      "id": 6,
+      "userName": "Harini",
+      "password": "123",
+      "name":"Harini",
+      "location":"Chennai",
+      "phoneNumber":9600097497
+    }
+  ]
+}

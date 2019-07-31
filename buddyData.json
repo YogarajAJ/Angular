@@ -1,0 +1,88 @@
+{
+  "buddy": [
+    {
+      "id": 3,
+      "name": "Melvin",
+      "location": "Chennai",
+      "phoneNumber": 9600097497,
+      "buddies": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Amresh",
+      "location": "Chennai",
+      "phoneNumber": 9600097497,
+      "buddies": [
+        3,
+        8
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Cheenu",
+      "location": "Chennai",
+      "phoneNumber": 9600097497,
+      "buddies": [
+        3
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Yogaraj",
+      "location": "Chennai",
+      "phoneNumber": 9600097497,
+      "buddies": [
+        1,
+        2,
+        3,
+        9
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Manan",
+      "buddies": [
+        1,
+        2,
+        3
+      ],
+      "location": "Chennai",
+      "phoneNumber": 9600097497
+    },
+    {
+      "id": 6,
+      "name": "Harini",
+      "buddies": [
+        1,
+        2,
+        3
+      ],
+      "location": "Chennai",
+      "phoneNumber": 9600097497
+    },
+    {
+      "name": "Celine",
+      "location": "Kerala",
+      "buddies": [],
+      "phoneNumber": "12131312",
+      "id": 7
+    },
+    {
+      "name": "Yogaraj",
+      "location": "Chennai",
+      "buddies": [],
+      "phoneNumber": "1231231",
+      "id": 8
+    },
+    {
+      "name": "ShreeRaj",
+      "location": "Kerala",
+      "buddies": [],
+      "phoneNumber": "124141",
+      "id": 9
+    }
+  ]
+}

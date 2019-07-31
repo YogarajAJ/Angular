@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "name": "Cheenu",
+      "userPosts": [
+        {
+          "id": 101,
+          "public": false,
+          "postData": ["Good Morning Folks !!!"],
+          "likes": 0,
+          "liked": true,
+          "comments": [
+            "Good Morning"
+          ]
+        },
+        {
+          "id": 102,
+          "public": false,
+          "postData": ["Good Evening Folks !!!"],
+          "likes": 12,
+          "liked": true,
+          "comments": [
+            "Good Evening"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Yogaraj",
+      "userPosts": [
+        {
+          "id": 101,
+          "public": false,
+          "postData": ["Good Afternoon Folks !!!"],
+          "likes": 0,
+          "liked": true,
+          "comments": [
+            "Good Afternoon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Yogaraj",
+      "userPosts": [
+        {
+          "id": 101,
+          "public": false,
+          "postData": ["Good Afternoon Folks !!!"],
+          "likes": 0,
+          "liked": false,
+          "comments": [
+            "Good Afternoon"
+          ]
+        }
+      ]
+    },
+    {
+      "postData": "JHi",
+      "public": true,
+      "id": 5
+    }
+  ]
+}
