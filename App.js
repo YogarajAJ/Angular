@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Navbar from './components/Navbar';
+import Background from './assets/bgimage.jpg'
 
+import Navbar from './components/Navbar';
 import Login from './components/Login';
 
 
@@ -73,10 +74,11 @@ class App extends React.Component {
     render() {
 
         return (
-            <div>
+            <div >
                 <div>
                     <Navbar />
                     <div >
+
                         <Login />
                     </div>
                 </div>

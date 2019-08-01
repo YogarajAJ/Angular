@@ -4,7 +4,7 @@ import '../css/navbar.css'
 class Navbar extends React.Component {
 
     code = () => {
-        let flag = true
+      //  let flag = true
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <h3 className="navbar-brand">Workout Buddy</h3>

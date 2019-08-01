@@ -13,14 +13,15 @@ class Buddy extends React.Component {
         super(props)
         this.state = {
             name: this.props.userName,
+            buddies: [],
             users: [],
-            buddy: [],
-            showAddBuddy:false
+            buddy: []
+            //showAddBuddy:false
 
         }
 
-       this.onSubmit =  this.onSubmit.bind(this)
-        
+        this.onSubmit = this.onSubmit.bind(this)
+
         this.getUsers()
         this.getBuddies()
 
@@ -61,18 +62,18 @@ class Buddy extends React.Component {
             })
     }
 
-    callAddBuddy = () =>{
-        this.setState({
-            showAddBuddy:!this.state.showAddBuddy
-        })
-    }
+    // callAddBuddy = () =>{
+    //     this.setState({
+    //         showAddBuddy:!this.state.showAddBuddy
+    //     })
+    // }
 
-    
-    cancelAddBuddy = () =>{
-        this.setState({
-            showAddBuddy:!this.state.showAddBuddy
-        })
-    }
+
+    // cancelAddBuddy = () =>{
+    //     this.setState({
+    //         showAddBuddy:!this.state.showAddBuddy
+    //     })
+    // }
 
     onSubmit(e) {
         e.preventDefault();
@@ -91,35 +92,55 @@ class Buddy extends React.Component {
             )
         )
 
-        let showAddBuddy = (this.state.showAddBuddy)?
-        <div>
-        <input className="form-control" placeholder="Buddy Name" ref={ (c) => this.title = c } name="title"></input> <br />
-        <input className="form-control" placeholder="location"></input> <br />
-        <input className="form-control" placeholder="Phone Number"></input> <br />
-        <button type="button" onClick={this.onSubmit} className="btn btn-success">Add Buddy</button>
-        <button type="button" onClick={this.cancelAddBuddy} className="btn btn-danger">Cancel</button>
-        </div>
-        : 
-        <button onClick = {this.callAddBuddy} className="btn btn-primary btn-sm">Add Buddy</button>
-        
+        let style = {
+            width: "200px",
+            float: "center",
+            textAlign: "center",
+            border: "3px solid grey",
+            background: "whitesmoke"
+        }
+
+        if (buddyData.length === 0) {
+            return (
+                <div>
+                    <br /><br />
+                    <div className="container" style={style}>
+                        <br />
+                        <h3>Buddy's </h3>
+                        <br />
+                        <h3>No Buddies Right now... </h3>
+                        <br />
+                    </div>
+                </div>
+            );
+        }
+
+        // let showAddBuddy = (this.state.showAddBuddy)?
+        // <div>
+        // <input className="form-control" placeholder="Buddy Name" ref={ (c) => this.title = c } name="title"></input> <br />
+        // <input className="form-control" placeholder="location"></input> <br />
+        // <input className="form-control" placeholder="Phone Number"></input> <br />
+        // <button type="button" onClick={this.onSubmit} className="btn btn-success">Add Buddy</button>
+        // <button type="button" onClick={this.cancelAddBuddy} className="btn btn-danger">Cancel</button>
+        // </div>
+        // : 
+        // <button onClick = {this.callAddBuddy} className="btn btn-primary btn-sm">Add Buddy</button>
+
         return (
-            <div className="container">
-                <br />
-                <div className="row">
+            <div>
+                <br /><br />
+                <div className="container" style={style}>
+                    <br />
                     <h3>Buddy's </h3>
-                </div>
-                <div className="row">
-                    {showAddBuddy}
-                </div>
-                <br />
-                <div className="row">
+                    <br />
                     <ul className="list-group">
-                        {buddyData}                        
+                        {buddyData}
                     </ul>
+                    <br />
                 </div>
             </div>
         );
-        
+
     }
 }
 

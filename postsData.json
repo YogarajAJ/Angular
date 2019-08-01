@@ -16,8 +16,8 @@
         },
         {
           "id": 102,
-          "public": false,
-          "postData": ["Good Evening Folks !!!"],
+          "public": true,
+          "postData": ["I gonna do 15 reps Today!!!"],
           "likes": 12,
           "liked": true,
           "comments": [
@@ -48,20 +48,15 @@
       "userPosts": [
         {
           "id": 101,
-          "public": false,
+          "public": true,
           "postData": ["Good Afternoon Folks !!!"],
           "likes": 0,
-          "liked": false,
+          "liked": true,
           "comments": [
             "Good Afternoon"
           ]
         }
       ]
-    },
-    {
-      "postData": "JHi",
-      "public": true,
-      "id": 5
     }
   ]
 }

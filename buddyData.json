@@ -17,7 +17,9 @@
       "phoneNumber": 9600097497,
       "buddies": [
         3,
-        8
+        8,
+        10,
+        11
       ]
     },
     {
@@ -83,6 +85,20 @@
       "buddies": [],
       "phoneNumber": "124141",
       "id": 9
+    },
+    {
+      "name": "Cheenu",
+      "location": "Chennai",
+      "buddies": [],
+      "phoneNumber": "9808089",
+      "id": 10
+    },
+    {
+      "name": "Varshithaa",
+      "location": "Chennai",
+      "buddies": [],
+      "phoneNumber": "124356788",
+      "id": 11
     }
   ]
 }

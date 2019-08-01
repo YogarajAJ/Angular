@@ -1,12 +1,13 @@
 import React from 'react'
 import axios from 'axios'
+import '../css/buddy.css'
 
 class AddBuddy extends React.Component {
 
     constructor(props) {
 
         super(props)
-        
+
         this.state = {
             userName: this.props.userName,
             userObject: {},
@@ -21,6 +22,9 @@ class AddBuddy extends React.Component {
 
         this.getBuddies()
     }
+
+
+    sendBuddy = () =>(this.getBuddies())
 
     getBuddies = () => {
         axios.get("http://localhost:3000/buddy").then(
@@ -55,7 +59,7 @@ class AddBuddy extends React.Component {
 
     componentDidUpdate() {
 
-       
+
 
         if (this.state.buddyObject.length !== 0) {
             axios.put("http://localhost:3000/buddy/" + this.state.userObject[0].id,
@@ -95,20 +99,41 @@ class AddBuddy extends React.Component {
 
 
     code = () => {
+        // let style = {
+        //     "text-align":"center"
+        // }
+
+
         let style = {
-            "text-align":"center"
+            textAlign: "center",
+            float: "center",
+            width: "250px",
+            border: "3px solid grey",
+            background:"whitesmoke"
+        }
+
+        let inputStyle = {
+            width: "200px"
+        }
+        let buttonStyle = {
+            float: "center",
+            textAlign: "center"
         }
         return (
-            <div className="container">
-                <div className="row">
-                    <h3>Add Buddy</h3>
-                </div>
+            <div>
+            <br /><br />
 
-                <div className="row">
-                    <input className="form-control" name="name" placeholder="Budddy Name" onChange={this.handleChange}></input>
-                    <input className="form-control" name="location" placeholder="Budddy Location" onChange={this.handleChange}></input>
-                    <input className="form-control" name="phoneNumber" placeholder="Budddy Phone Number" onChange={this.handleChange}></input>
-                    <div ><button className="btn btn-light"  onClick={this.onFormSubmit}>Add</button></div>
+                <div className="container" style={style} >
+                    <br />
+                    <div>
+                        <h3>Add Budddy Here !!!</h3>
+                    </div>
+                    <br />
+                    <h4 style={{ textAlign: "center" }}>Buddy</h4>
+                    <input className="form-control " style={inputStyle} name="name" placeholder="Budddy Name" onChange={this.handleChange}></input><br />
+                    <input className="form-control " style={inputStyle} name="location" placeholder="Budddy Location" onChange={this.handleChange}></input><br />
+                    <input className="form-control " style={inputStyle} name="phoneNumber" placeholder="Budddy Phone Number" onChange={this.handleChange}></input>
+                    <div style={buttonStyle}><br /><button className="btn btn-dark" onClick={this.onFormSubmit}>Add</button></div><br />
                 </div>
             </div>
         )
